@@ -66,63 +66,6 @@ end
 settings().Rendering.QualityLevel = "Level01"
 
 
-local Settings = {
-    ["Rod Quest"] = "", -- Aurora , Trident , Rod Of The Depth
-    ["Auto Totem Meteor"] = false,
-    ["Auto Meteor"] = true,
-    ["Auto Treasure"] = true,
-    ["Bestiary"] = {},
-    ["Recipe"] = {},
-    ["Method"] = "Instant", -- Hold , Instant
-    ["WorldEvent"] = false,
-    ["Auto Buy Luck"] = false,
-    ["Auto Aurora"] = false,
-    ["Auto Eclipse"] = false,
-    ["Fish Count"] = 25,
-    ["Failed Every"] = 50,
-    ["Auto Sell"] = true,
-    ["Spot"] = "",
-    ["Rod"] = "",
-    ["Fav"] = {
-        "Amethyst",
-        "Ruby",
-        "Opal",
-        "Lapis Lazuli",
-        "Moonstone",
-        "Driftwood",
-        "Wood",
-        "Ancient Wood",
-        "Void Wood",
-        "Inferno Wood",
-        "Moon Wood",
-        "Magic Thread",
-        "Ancient Thread",
-        "Lunar Thread",
-        "Golden Sea Pearl",
-        "Meg's Fang",
-        "Meg's Spine",
-        "Magic Thread",
-        "Ancient Thread",
-        "Lunar Thread",
-        "Aurora Totem",
-        "Eclipse Totem",
-        "Meteor Totem",
-        "Smokescreen Totem",
-        "Sundial Totem",
-        "Tempest Totem",
-        "Windset Totem",
-        "Nessie",
-        "Megalodon",
-        "Ancient Depth Serpent",
-        "Ancient Megalodon",
-        "Molten Banshee",
-        "The Depths Key",
-        "Deep Sea Fragment",
-        "Solar Fragment",
-        "Earth Fragment",
-        "Ancient Fragment",
-    }
-}
 
 if VariableIndex == nil then
     VariableIndex = {
@@ -2410,4 +2353,5 @@ else
     for i,v in pairs(Settings["Bestiary"]) do
         Book(v)
     end
+
 end
